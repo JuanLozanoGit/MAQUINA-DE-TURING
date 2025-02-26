@@ -10,7 +10,7 @@ TEMAS:
 
 1️⃣ Descargar el repositorio
 
-**(https://github.com/JuanLozanoGit/MAQUINA-DE-TURING/tree/main)**
+**https://github.com/JuanLozanoGit/MAQUINA-DE-TURING/tree/main**
 
 2️⃣ Ejecutar el script
 
