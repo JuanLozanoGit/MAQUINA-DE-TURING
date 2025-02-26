@@ -10,13 +10,13 @@ TEMAS:
 
 1️⃣ Descargar el repositorio
 
-(https://github.com/JuanLozanoGit/MAQUINA-DE-TURING/tree/main)
+**(https://github.com/JuanLozanoGit/MAQUINA-DE-TURING/tree/main)**
 
 2️⃣ Ejecutar el script
 
 Ejecuta el programa en una terminal de Python:
 
-taller maquina turing.py
+**taller maquina turing.py**
 
 3️⃣ Interactuar con la máquina
 
