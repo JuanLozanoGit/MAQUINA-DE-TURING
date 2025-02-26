@@ -33,11 +33,6 @@ Seno (sin)
 La entrada y salida de los números se manejan en binario para representar la información de forma compacta en la cinta.
 
 
-**Autores**
-
-Este proyecto fue desarrollado como parte de un estudio sobre Máquinas de Turing y su aplicación en operaciones matemáticas utilizando Python.
-
-
 ¿Cómo ejecutarlo?
 
 1️⃣ Descargar el repositorio
@@ -53,3 +48,9 @@ Ejecuta el programa en una terminal de Python:
 3️⃣ Interactuar con la máquina
 
 El programa solicitará ingresar un número y una operación matemática. Para operaciones binarias (+, -, *, /, ^), se pedirá un segundo número.
+
+
+**Autores**
+
+Este proyecto fue desarrollado como parte de un estudio sobre Máquinas de Turing y su aplicación en operaciones matemáticas utilizando Python.
+
