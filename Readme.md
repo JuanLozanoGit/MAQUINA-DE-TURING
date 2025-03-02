@@ -11,6 +11,13 @@ TEMAS:
 
 Una Máquina de Turing es un modelo teórico de computación que consiste en una cinta infinita, un cabezal de lectura/escritura y un conjunto de reglas de transición que determinan cómo se mueve el cabezal y modifica la cinta. Este modelo se utiliza para simular cualquier algoritmo computacional.
 
+**Funcionamiento**
+El código define una Máquina de Turing con los siguientes componentes:
+
+- Cinta infinita: Representa los números y operaciones en binario.
+- Cabezal de lectura/escritura: Se mueve sobre la cinta, leyendo y escribiendo símbolos.
+- Estados: La máquina cambia de estado según las reglas definidas.
+- Función de transición: Define cómo la máquina procesa los datos en la cinta.
 
 **¿Qué puede hacer?**
 
