@@ -34,7 +34,7 @@ Seno (sin)
 La entrada y salida de los números se manejan en binario para representar la información de forma compacta en la cinta.
 
 
-¿Cómo ejecutarlo?
+**Cómo ejecutarlo?**
 
 1️⃣ Descargar el repositorio
 
