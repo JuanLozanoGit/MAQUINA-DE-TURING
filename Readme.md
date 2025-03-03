@@ -53,5 +53,5 @@ El programa solicitará ingresar un número y una operación matemática. Para o
 
 **Autores**
 
-Este proyecto fue desarrollado como parte de un estudio sobre Máquinas de Turing y su aplicación en operaciones matemáticas utilizando Python, creado por 
+Este proyecto fue desarrollado como parte de un estudio sobre Máquinas de Turing y su aplicación en operaciones matemáticas utilizando Python, creado por Juan Lozano, Julio Guarnizo, Maria Parra, Andres Espitia
 
