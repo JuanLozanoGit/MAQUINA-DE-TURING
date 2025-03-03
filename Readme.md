@@ -1,10 +1,3 @@
-TEMAS:
-- QUE ES  ANDRES
-- FUNCIONAMIENTO   MARIA
-- QUE PUEDE HACER  YO
-- COMO EJECUTARLO  JULIO
-- -AUTORES
-
 **Máquina de Turing para Operaciones Matemáticas**
 
 **¿Qué es?**
