@@ -37,30 +37,34 @@ def binary_to_decimal(b):
 def create_arithmetic_tm(operation, num1, num2=None):
     if operation == "+":
         result = num1 + num2
+        tape = decimal_to_binary(num1) + " + " + decimal_to_binary(num2)
     elif operation == "-":
         result = num1 - num2
+        tape = decimal_to_binary(num1) + " - " + decimal_to_binary(num2)
     elif operation == "*":
         result = num1 * num2
+        tape = decimal_to_binary(num1) + " * " + decimal_to_binary(num2)
     elif operation == "/":
+        if num2 == 0:
+            print("Error: División por cero.")
+            return None, None
         result = num1 // num2
+        tape = decimal_to_binary(num1) + " / " + decimal_to_binary(num2)
     elif operation == "^":
         result = num1 ** num2
+        tape = decimal_to_binary(num1) + " ^ " + decimal_to_binary(num2)
     elif operation == "√":
-        result = int(math.sqrt(num1))
+        result = math.sqrt(num1)
+        tape = decimal_to_binary(num1) + " √"
     elif operation == "sin":
-        result = int(math.sin(math.radians(num1)))
+        result = math.sin(math.radians(num1))  # Calcula seno en radianes
+        tape = decimal_to_binary(num1) + " sin"
     else:
         raise ValueError("Operación no válida")
-    
-    tape = decimal_to_binary(num1)
-    if num2 is not None:
-        tape += operation + decimal_to_binary(num2) + " "
-    else:
-        tape += operation + " "
-    
-    tm = TuringMachine(tape, "q0", {"q_accept"}, {})
-    return tm, result
 
+    # Crear la máquina de Turing con un tape adecuado
+    tm = TuringMachine(tape.strip(), "q0", {"q_accept"}, {})
+    return tm, result
 
 if __name__ == "__main__":
     num1 = int(input("Ingrese el primer número: "))
@@ -68,8 +72,13 @@ if __name__ == "__main__":
     num2 = None
     if operation in ["+", "-", "*", "/", "^"]:
         num2 = int(input("Ingrese el segundo número: "))
-    
+
     tm, result = create_arithmetic_tm(operation, num1, num2)
-    final_state, final_tape = tm.run()
-    print(f"{operation} - Estado final: {final_state}")
-    print(f"{operation} - Resultado en binario: {decimal_to_binary(result)}")
+
+    if tm is not None and result is not None:
+        final_state, final_tape = tm.run()
+        
+        # Mostrar resultados
+        print(f"{operation} - Estado final: {final_state}")
+        print(f"{operation} - Resultado en decimal: {result}")
+        print(f"{operation} - Resultado en binario: {decimal_to_binary(int(result * 1e10)) if isinstance(result, float) else decimal_to_binary(result)}")
