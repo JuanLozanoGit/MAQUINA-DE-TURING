@@ -44,7 +44,7 @@ La entrada y salida de los números se manejan en binario para representar la in
 
 Ejecuta el programa en una terminal de Python:
 
-**taller maquina turing.py**
+**Maquina turing(Sin math).py**
 
 3️⃣ Interactuar con la máquina
 
